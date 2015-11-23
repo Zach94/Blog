@@ -6,10 +6,10 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class= "row">
+<body>
   <header class= "navbar navbar-inverse">
     <div class= "container navbar-header navbar-nav">
-      <div> <%= link_to "ZBLOG", "#", class: "btn btn-lg btn-primary pull-left", id: "logo" %></div>
+      <div> <%= link_to "ZBLOG", "#", class: "btn btn-lg btn-primary", id: "logo" %></div>
       <div>
         <div class= "navbutton"><%= link_to "Home", "#", class: "btn-lg btn-primary pull-right" %>></div>
         <div class= "navbutton"><%= link_to "Articles", "#", class: "btn-lg btn-primary pull-right" %>></div>
@@ -18,8 +18,10 @@
       </div>
     </div>
   </header>
-
-  <%= yield %>
+  
+  <div class= "container">
+    <%= yield %>
+  </div>
 
 </body>
 </html>

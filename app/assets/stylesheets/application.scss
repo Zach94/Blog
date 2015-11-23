@@ -19,11 +19,23 @@
  */
 #logo {
   float: left;
-  
+  margin-left: 40px;
 }
+
 
 
 .navbutton {
   float: right;
 }
 
+.center {
+  text-align: center;
+}
+
+.blogbtn {
+  height: 150px;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
